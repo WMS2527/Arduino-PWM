@@ -1,6 +1,6 @@
 // This is the base example code for making an LED fade in and out.
 // My idea is to have them fade in and out in sequence (Like a "line of light" or something)
-int ledPin = 10;  // LED connected to digital pin 9
+int ledPin = 10;  // LED connected to digital pin 10
 
 void setup() {
   // nothing happens in setup
