@@ -1,6 +1,10 @@
 // This is the base example code for making an LED fade in and out.
 // My idea is to have them fade in and out in sequence (Like a "line of light" or something)
-int ledPin = 10;  // LED connected to digital pin 10
+int ledPin1 = 9; // LED connected to digital pin 9
+int ledPin2 = 10;  // LED connected to digital pin 10
+int ledPin3 = 11; // LED connected to digital pin 11
+int ledPin4 = 12; // LED connected to digital pin 12
+int ledPin5 = 13; // // LED connected to digital pin 13
 
 void setup() {
   // nothing happens in setup
@@ -10,7 +14,7 @@ void loop() {
   // fade in from min to max in increments of 5 points:
   for (int fadeValue = 0; fadeValue <= 255; fadeValue += 5) {
     // sets the value (range from 0 to 255):
-    analogWrite(ledPin, fadeValue);
+    analogWrite(ledPin2, fadeValue);
     // wait for 30 milliseconds to see the dimming effect
     delay(30);
   }
@@ -18,7 +22,7 @@ void loop() {
   // fade out from max to min in increments of 5 points:
   for (int fadeValue = 255; fadeValue >= 0; fadeValue -= 5) {
     // sets the value (range from 0 to 255):
-    analogWrite(ledPin, fadeValue);
+    analogWrite(ledPin2, fadeValue);
     // wait for 30 milliseconds to see the dimming effect
     delay(30);
   }
