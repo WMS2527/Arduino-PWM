@@ -1,10 +1,11 @@
-// This is the base example code for making an LED fade in and out.
-// My idea is to have them fade in and out in sequence (Like a "line of light" or something)
+// Uses the concept of "Pulse Width Modulation"
+// Causes 3 LEDs to fade in and out in sequence
+// (Fade in, Fade out, Move to next LED)
 
 // Assigns pins to LEDs
-int ledPin1 = 10;  // LED connected to digital pin 10
-int ledPin2 = 11; // LED connected to digital pin 11
-int ledPin3 = 12; // LED connected to digital pin 12
+int ledPin1 = 9;  // LED connected to digital pin 10
+int ledPin2 = 10; // LED connected to digital pin 11
+int ledPin3 = 11; // LED connected to digital pin 12
 
 void setup() {
   // nothing happens in setup
@@ -65,3 +66,4 @@ void loop() {
     // Wait for 30 milliseconds to see the dimming effect
     delay(30);
   }
+}
